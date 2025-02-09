@@ -1,0 +1,8 @@
+prefix=/home/pc/cyber/devel
+
+Name: socketcan_bridge
+Description: Description of socketcan_bridge
+Version: 0.8.5
+Cflags: -I/home/pc/cyber/src/socketcan_bridge/include
+Libs: -L${prefix}/lib -lsocketcan_to_topic -ltopic_to_socketcan
+Requires: can_msgs rosconsole_bridge roscpp socketcan_interface

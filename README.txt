@@ -1,0 +1,15 @@
+which slcand
+sudo modprobe can
+sudo modprobe can-raw
+sudo modprobe slcan
+sudo slcand -o -c -s8 /dev/ttyACM0 can0
+sudo ip link set up can0
+sudo ip link set can0 txqueuelen 1000
+
+which slcand
+modprobe can
+modprobe can-raw
+modprobe slcan
+slcand -o -c -s8 /dev/ttyACM0 can0
+ip link set up can0
+ip link set can0 txqueuelen 1000

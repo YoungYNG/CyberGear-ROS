@@ -1,0 +1,12 @@
+<launch>
+
+    <node pkg="socketcan_bridge" type="socketcan_bridge_node" name="socketcan_bridge_node" output="screen">
+    </node>
+    <node pkg="drempower" type="recvmsg_subscriber_node" name="recvmsg_subscriber_node" output="screen">
+    </node>
+    <node pkg="drempower" type="property_subscriber_node" name="property_subscriber_node" output="screen">
+    </node>
+    <node pkg="drempower" type="enable_all_node" name="enable_node" output="screen">
+    </node> 
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/pc/cyber/devel
+
+Name: can_msgs
+Description: Description of can_msgs
+Version: 0.8.5
+Cflags: -I/home/pc/cyber/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

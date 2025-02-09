@@ -1,0 +1,31 @@
+(cl:defpackage drempower-msg
+  (:use )
+  (:export
+   "<SETSERVOANGLE>"
+   "SETSERVOANGLE"
+   "<TARGET_POINT>"
+   "TARGET_POINT"
+   "<ENABLE_MSG>"
+   "ENABLE_MSG"
+   "<FT_MSG>"
+   "FT_MSG"
+   "<FV_MSG>"
+   "FV_MSG"
+   "<INFO_MSG>"
+   "INFO_MSG"
+   "<IP_MSG>"
+   "IP_MSG"
+   "<ME_MSG>"
+   "ME_MSG"
+   "<PP_MSG>"
+   "PP_MSG"
+   "<PROPERTY_MSG>"
+   "PROPERTY_MSG"
+   "<STATE_MSG>"
+   "STATE_MSG"
+   "<STOP_MSG>"
+   "STOP_MSG"
+   "<ZERO_POS_MSG>"
+   "ZERO_POS_MSG"
+  ))
+

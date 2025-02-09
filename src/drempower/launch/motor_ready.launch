@@ -1,0 +1,32 @@
+<launch>
+
+    <node pkg="socketcan_bridge" type="socketcan_bridge_node" name="socketcan_bridge_node" output="screen">
+    </node>
+    <node pkg="drempower" type="recvmsg_subscriber_node" name="recvmsg_subscriber_node" output="screen">
+    </node>
+    <node pkg="drempower" type="property_subscriber_node" name="property_subscriber_node" output="screen">
+    </node>
+
+    <node pkg="drempower" type="pp_subscriber_node" name="pp_subscriber_node" output="screen">
+    </node>
+    <!-- <node pkg="drempower" type="ip_subscriber_node" name="ip_subscriber_node" output="screen">
+    </node>  -->
+    <node pkg="drempower" type="fv_subscriber_node" name="fv_subscriber_node" output="screen">
+    </node> 
+    <node pkg="drempower" type="stop_node" name="stop_node" output="screen">
+    </node> 
+    <node pkg="drempower" type="enable_node" name="enable_node" output="screen">
+    </node> 
+    <node pkg="drempower" type="zero_pos_node" name="zero_pos_node" output="screen">
+    </node> 
+    <node pkg="drempower" type="zero_all_node" name="zero_all_node" output="screen">
+    </node> 
+    <!-- <node pkg="drempower" type="ft_subscriber_node" name="ft_subscriber_node" output="screen">
+    </node>  -->
+
+    <node pkg="drempower" type="motor_test03_node" name="motor_test03_node" output="screen">
+    </node>
+    <node pkg="drempower" type="enable_all_node" name="enable_all_node" output="screen">
+    </node> 
+    
+</launch>

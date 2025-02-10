@@ -1,3 +1,16 @@
+/*
+Author: Young
+
+Code: This node(.cpp) is to stop certain cyber , when you use this node , 
+      your motor will stop work and you can feel that the motor won't shake anymore
+
+Notice: 1.XIAOMI cybergear motor's zero_angle is when the motor get electic,
+        we can't set it manually
+        2.You should limit the max_current all of your cyber,you can set it 
+        if you don't set it or your limitation is too high , there may have some
+        safety problem. 
+*/
+
 #include <ros/ros.h>
 #include <drempower/fv_msg.h>
 #include <drempower/stop_msg.h>

@@ -1,3 +1,10 @@
+/*
+Author: Young
+
+Code: This node(.cpp) is to enable certain motor whose motor id 
+is subcribed in the following subscribe callback
+*/
+
 #include <ros/ros.h>
 #include <drempower/fv_msg.h>
 #include <drempower/stop_msg.h>

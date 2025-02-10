@@ -24,7 +24,7 @@
     <!-- <node pkg="drempower" type="ft_subscriber_node" name="ft_subscriber_node" output="screen">
     </node>  -->
 
-    <node pkg="drempower" type="motor_test03_node" name="motor_test03_node" output="screen">
+    <node pkg="drempower" type="motor_mode_publisher_node" name="motor_mode_publisher_node" output="screen">
     </node>
     <node pkg="drempower" type="enable_all_node" name="enable_all_node" output="screen">
     </node> 

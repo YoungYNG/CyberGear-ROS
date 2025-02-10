@@ -1,8 +1,0 @@
-<launch>
-
-    <node pkg="drempower" type="input_xyz" name="input_xyz" output="screen">
-    </node> 
-    <node pkg="drempower" type="set_angle_sub" name="set_angle_sub" output="screen">
-    </node> 
-
-</launch>

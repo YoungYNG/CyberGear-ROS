@@ -165,17 +165,9 @@ add_executable(property_publisher_node src/property_publisher.cpp)
 #告诉Cmake当链接此可执行文件时需要链接哪些库
 target_link_libraries(property_publisher_node ${catkin_LIBRARIES})
 
-add_executable(motor_test_node src/motor_test_publisher.cpp)
+add_executable(motor_mode_publisher src/motor_mode_publisher.cpp)
 #告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(motor_test_node ${catkin_LIBRARIES})
-
-add_executable(motor_test02_node src/motor_test02_publisher.cpp)
-#告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(motor_test02_node ${catkin_LIBRARIES})
-
-add_executable(motor_test03_node src/motor_test03_publisher.cpp)
-#告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(motor_test03_node ${catkin_LIBRARIES})
+target_link_libraries(motor_mode_publisher ${catkin_LIBRARIES})
 
 add_executable(motor_info_send src/motor_info_send.cpp)
 #告诉Cmake当链接此可执行文件时需要链接哪些库
@@ -214,21 +206,6 @@ add_executable(zero_all_node src/zero_all_node.cpp)
 target_link_libraries(zero_all_node ${catkin_LIBRARIES})
 
 #声明想要的可执行文件的文件名，以及所需要的源列表，如果有多个源列表，空格列在此处
-add_executable(send_xy src/send_xy.cpp)
-#告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(send_xy ${catkin_LIBRARIES})
-
-#声明想要的可执行文件的文件名，以及所需要的源列表，如果有多个源列表，空格列在此处
-add_executable(input_xyz src/input_xyz.cpp)
-#告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(input_xyz ${catkin_LIBRARIES})
-
-#声明想要的可执行文件的文件名，以及所需要的源列表，如果有多个源列表，空格列在此处
-add_executable(set_angle_sub src/set_angle_sub.cpp)
-#告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(set_angle_sub ${catkin_LIBRARIES})
-
-#声明想要的可执行文件的文件名，以及所需要的源列表，如果有多个源列表，空格列在此处
 add_executable(enable_all_node src/enable_all_node.cpp)
 #告诉Cmake当链接此可执行文件时需要链接哪些库
 target_link_libraries(enable_all_node ${catkin_LIBRARIES})
@@ -239,9 +216,9 @@ add_executable(stop_all_node src/stop_all_node.cpp)
 target_link_libraries(stop_all_node ${catkin_LIBRARIES})
 
 #声明想要的可执行文件的文件名，以及所需要的源列表，如果有多个源列表，空格列在此处
-add_executable(test_input_xyz src/test_input_xyz.cpp)
+add_executable(control_pos src/control_pos.cpp)
 #告诉Cmake当链接此可执行文件时需要链接哪些库
-target_link_libraries(test_input_xyz ${catkin_LIBRARIES})
+target_link_libraries(control_pos ${catkin_LIBRARIES})
 
 
 ## Declare a C++ library
@@ -253,9 +230,7 @@ target_link_libraries(test_input_xyz ${catkin_LIBRARIES})
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(set_angle_sub ${PROJECT_NAME}_generate_messages_cpp)
-add_dependencies(input_xyz ${PROJECT_NAME}_generate_messages_cpp)
-add_dependencies(send_xy ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(control_pos ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context

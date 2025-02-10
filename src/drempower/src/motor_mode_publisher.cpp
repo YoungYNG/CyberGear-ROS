@@ -1,16 +1,15 @@
-/**************************************************
-大然机器人-小米CyberGear微电机ROS控制库
+/*
+Author: Young
 
-适用平台：linux平台
-库版本号：v1.0
-测试主控版本：Ubuntu 20.04.6
-测试模块：DR-USB_CAN模块
-测试人员：田秋俊
-测试时间：2023.09.15
+Code: This node(.cpp) is to subscribe mode_info,vel_info,pos_info and so on from the publisher
+      and send the msgs to related mode_node .
 
-备注：该库函数目前可适用于大然科技的USB转CAN模块
-淘宝链接： https://item.taobao.com/item.htm?spm=a1z100.5-c-s.w4002-22325405943.12.31aac3b4jKqqpc&id=705379289168
-*************************************************/
+Notice: 1.XIAOMI cybergear motor's zero_angle is when the motor get electic,
+        we can't set it manually
+        2.You should limit the max_current all of your cyber,you can set it 
+        if you don't set it or your limitation is too high , there may have some
+        safety problem. 
+*/
 
 #include "ros/ros.h"
 #include "drempower/pp_msg.h"
@@ -167,7 +166,7 @@ void info_callback(const drempower::info_msg &msg)
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "");
-    ros::init(argc, argv, "motor_test03_node");
+    ros::init(argc, argv, "motor_mode_publisher_node");
     ros::NodeHandle nh;
     ros::Subscriber info_sub = nh.subscribe("motor_info", 10000, info_callback);
     // int motor_id;

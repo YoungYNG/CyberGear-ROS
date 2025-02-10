@@ -1,3 +1,11 @@
+/*
+Author: Young
+
+Code: This node(.cpp) is to enable all the motor.Here I have 3 motor with motor id 1,2,3,
+you can modify my code simply according to your motor numbers and motor ID
+*/
+
+
 #include <ros/ros.h>
 #include <drempower/fv_msg.h>
 #include <drempower/stop_msg.h>
@@ -38,6 +46,7 @@ int main(int argc, char **argv)
     ros::Rate rate(1);
     while(ros::ok() && break_flag <= 2)
     {
+        /* You mainly change here */
         p_message.id = 1;
         p_message.cmd_mode = 3;
         p_message.address = 0x0000; 
@@ -61,6 +70,8 @@ int main(int argc, char **argv)
         break_flag++;
         rate.sleep(); // 延时等待CAN通信初始化
         // ros::spinOnce();
+
+        /* You mainly change here */
     }
     ROS_INFO("Shutting down enable_all_node.");
     ros::shutdown();

@@ -1,3 +1,15 @@
+/*
+Author: Young
+
+Code: This node(.cpp) is to subscribe msgs and transfer them to the CAN msgs
+
+Notice: 1.XIAOMI cybergear motor's zero_angle is when the motor get electic,
+        we can't set it manually
+        2.You should limit the max_current all of your cyber,you can set it 
+        if you don't set it or your limitation is too high , there may have some
+        safety problem. 
+*/
+
 #include "ros/ros.h"
 #include "can_msgs/Frame.h"
 #include <sstream>

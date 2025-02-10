@@ -1,8 +1,0 @@
-prefix=/home/pc/cyber/install
-
-Name: can_msgs
-Description: Description of can_msgs
-Version: 0.8.5
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime std_msgs

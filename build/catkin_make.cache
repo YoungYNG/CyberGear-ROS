@@ -1,2 +1,0 @@
-can_msgs:drempower:socketcan_bridge:socketcan_interface
--DCATKIN_DEVEL_PREFIX=/home/pc/cyber/devel -DCMAKE_INSTALL_PREFIX=/home/pc/cyber/install -G Unix Makefiles

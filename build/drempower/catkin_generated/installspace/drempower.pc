@@ -1,8 +1,0 @@
-prefix=/home/pc/cyber/install
-
-Name: drempower
-Description: Description of drempower
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: can_msgs roscpp message_runtime

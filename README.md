@@ -12,7 +12,7 @@ cd CyberGear-ROS-main
 catkin_make
 ```
 
-3. In a new console：==This step is vital, you should set CAN first==
+3. In a new console：**This step is vital, you should set CAN first**
 ```
 #set CAN for linux
 which slcand
@@ -43,5 +43,5 @@ source ./devel/setup.bash
 rosrun drempower control_pos
 ```
 
-==Notice==: You should open control_pos.cpp and modify it.
+**Notice**: You should open control_pos.cpp and modify it.
 You can see the node's explanation under the workspace of drempower.

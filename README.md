@@ -19,6 +19,7 @@ which slcand
 sudo modprobe can
 sudo modprobe can-raw
 sudo modprobe slcan
+#notice that you may modify your ACMx according to your device number
 sudo slcand -o -c -s8 /dev/ttyACM0 can0
 sudo ip link set up can0
 sudo ip link set can0 txqueuelen 1000
